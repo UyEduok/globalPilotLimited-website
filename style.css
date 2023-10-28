@@ -244,6 +244,10 @@ h2.text-body-emphasis{
 
 
 @media (max-width: 992px) {
+
+  body {
+    overflow-x: hidden;
+  }
   .carousel-control-next {
     top: 90%;
     right: 40%;
@@ -296,11 +300,15 @@ h2.text-body-emphasis{
   }
 
   .gpl-people-image{
-    padding-bottom: 15%;
-    width: 98%; /* Make the image the same width as the container */
-    padding-right: 3.4%;
+    padding-bottom: 90px;
+    width: 500px; /* Make the image the same width as the container */
+    padding-right: 15px;
     display: block; /* Center the image horizontally */
     margin: 0 auto;
+  }
+
+  .btn-gpl{
+    align-items: center;
   }
 
   .mx-lg-auto{
@@ -338,18 +346,6 @@ h2.text-body-emphasis{
     width: 30px !important;
   }
 
-  .foot-logo-div{
-    position: relative;
-  }
-  .footer-logo{
-    position: absolute;
-    left: 30%;
-    top: 10%;
-    padding-left: 2.5%;
-  }
-  .footer-s{
-    padding-top: 15%;
-  }
   .contact-footer{
     display: none;
   }
@@ -551,7 +547,7 @@ h2.text-body-emphasis{
 }
 
 /* Initially hide the footer content */
-.hide-foote-sider{
+.hide-footer-side{
   opacity: 0;
   transform: translateX(40px);
   transition: opacity 1.5s, transform 1.5s;
@@ -565,3 +561,21 @@ h2.text-body-emphasis{
 
 
 
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* Customize the background color */
+  z-index: 9999; /* Ensure the splash is on top of everything */
+  transition: opacity 1s; /* Add a smooth transition effect */
+  opacity: 1; /* Initially visible */
+}
+
+.main-content {
+  display: none; /* Initially hide the main content */
+}
