@@ -1,0 +1,567 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+
+.gradient-background {
+  background: linear-gradient(300deg, red, gold, #5DA312);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+
+}
+
+.t-nav-link {
+  color: gold;
+  font-weight: bold;
+  padding: 12px 16px; 
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-item.dropdown:hover .nav-link {
+  color: white; 
+}
+
+
+/* CSS for the scrolled-down state */
+.scrolled-navbar {
+  background-color: white !important;
+  padding-top: 1% !important;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.text-black {
+  color: black !important;
+  font-weight: normal !important;
+}
+
+/* Style for the ellipsis button */
+.ellipsis-button {
+  background: none;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  color: gold;
+  font-weight: bold;
+}
+
+/* Style for the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 0;
+}
+
+/* Style for the dropdown links */
+.dropdown-item {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: white;
+  background-color: #5DA312;
+}
+
+.dropdown-border{
+  border-top: 1px solid white;
+}
+
+.dropdown-divider {
+  margin: 0;
+  height: 50%;
+  background-color: white;
+}
+
+
+/* Show the dropdown content when the ellipsis button is hovered over */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Custom icon for the dropdown trigger element */
+.dropdown-trigger::before {
+  content: "\25BC"; /* You can use different Unicode characters for the dropdown icon */
+  margin-left: 5px; /* Adjust the spacing between the icon and text */
+}
+
+/* Custom styling for the dropdown menu */
+.dropdown-on-hover-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Apply styles when the dropdown menu is visible */
+.dropdown-on-hover-menu.show {
+  display: block;
+}
+
+/* Show the dropdown menu when the parent element is hovered over */
+.nav-item:hover .dropdown-menu {
+  display: block;
+  padding: 0;
+}
+
+.slide {
+  position: relative;
+}
+
+.carousel-control-next {
+  background-color: #5DA312;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 40%;
+  right: 3%;
+}
+
+.carousel-control-prev {
+  background-color: #5DA312;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 40%;
+  left: 3%;
+}
+
+.carousel-indicators {
+  display: none; /* Hide the carousel indicators */
+}
+
+.carousel-pic{
+  height: 600px;
+}
+
+.carousel-caption{
+  position: absolute;
+  bottom: 30%;
+}
+
+/* Define the slide-in animation class */
+.carousel-slide-in-top {
+  animation: slide-in-top 1.5s ease-in-out;
+}
+
+.carousel-slide-in-bottom {
+  animation: slide-in-bottom 1.5s ease-in-out;
+}
+
+@keyframes slide-in-top {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-bottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.node-title {
+  font-weight: bold;
+  color: gold;
+}
+
+.tick::before {
+  content: "\2713";
+  margin-right: 10px;
+  color: #5DA312;
+  font-weight: bold;
+}
+
+.coiled-service-list::before {
+  content: "▶";
+  color: black;
+  margin-right: 5px;
+}
+
+#service-section {
+  background-color: #f8f9fa;
+}
+
+#footer-section{
+  background-color: white;
+}
+
+#hse-section {
+  background-color:  white;
+}
+
+#connect-section{
+  background-color: #f8f9fa;
+}
+
+.other-files{
+  background-color: #f8f9fa;
+}
+
+.section2-menu {
+  display: none;
+}
+
+h2.text-body-emphasis{
+  color: white;
+}
+
+.ellipsis-button:hover{
+  color: white;
+}
+.white-text{
+  color: white !important;
+  font-weight: normal !important;
+}
+
+
+@media (max-width: 992px) {
+  .carousel-control-next {
+    top: 90%;
+    right: 40%;
+    background-color: #5DA312;
+  }
+  
+  .carousel-control-prev {
+    top: 90%;
+    left: 40%;
+    background-color: #5DA312;
+  }
+
+  .carousel-caption{
+    position: absolute;
+    bottom: 20%;
+  }
+
+  #small-nav{
+    margin-top: o !important;
+    padding-top: 0 !important;
+  }
+  nav{
+    margin-top: o !important;
+    padding-top: 0 !important;
+  }
+
+  .nav-link{
+    background-color: #5DA312;
+    margin: 0.5px;
+    width: 100%; /* Make the navbar items occupy the full width */
+    display: block;
+    color: white;
+  }
+
+  .carousel-pic{
+    height: 400px;
+  }
+
+  .ellipsis-button {
+    color: white;
+  }
+
+  .gpl-people-container{
+    position: relative;
+  }
+  .gpl-people-text{
+    position: absolute;
+    bottom: 0.1%;
+    padding-right: 8%;
+  }
+
+  .gpl-people-image{
+    padding-bottom: 15%;
+    width: 98%; /* Make the image the same width as the container */
+    padding-right: 3.4%;
+    display: block; /* Center the image horizontally */
+    margin: 0 auto;
+  }
+
+  .mx-lg-auto{
+    width: 1000px;
+  }
+
+  h2.text-body-emphasis{
+    padding-bottom: 18%;
+    text-align: center;
+  }
+  .people-logo{
+    padding-left: 40%;
+  }
+
+  .btn-people{
+    border-bottom: none;
+  }
+  .btn-gpl{
+    width: 100%;
+  }
+  
+  .footer-row {
+    text-align: center;
+  }
+  .footer2, .footer3 {
+    text-align: center;
+    padding-top: 2%;
+  }
+
+  .footer3{
+    padding-bottom: 2%;
+  }
+
+  .logo{
+    width: 30px !important;
+  }
+
+  .foot-logo-div{
+    position: relative;
+  }
+  .footer-logo{
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    padding-left: 2.5%;
+  }
+  .footer-s{
+    padding-top: 15%;
+  }
+  .contact-footer{
+    display: none;
+  }
+
+  .contact-container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .hse1{
+    padding-bottom: 10%;
+  }
+
+  .nav-text{
+    position: relative;
+    top: 20%;
+  }
+
+}
+
+@media (min-width: 993px) {
+  .nav-size{
+    padding-top: 3% !important;
+  }
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+
+.navbar-toggler{
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+.offcanvas-body, .offcanvas-title, .offcanvas-end, .offcanvas-body, .offcanvas-header{
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.offcanvas{
+     width:50% !important;
+}  
+
+/* Add CSS to transition the main content */
+.offcanvas-slide {
+  transition: transform 0.3s ease-in-out;
+}
+
+.offcanvas-end.active {
+  transform: translateX(-100%); /* Push the main content to the left */
+}
+
+.close-offcanvas{
+  position: absolute;
+  right: 10%;
+}
+
+.close-offcanvas:focus,
+.close-offcanvas:active{
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+.connect-heading, .connect-text{
+  color: black;
+}
+
+.btn-connect{
+  padding-left: center;
+}
+
+.contact-footer{
+  padding-top: 3%;
+}
+
+.copyright{
+  padding-top: 0%;
+  margin-top: 0%;
+}
+
+.card-contact{
+  background-color: #5DA312;
+}
+
+.contact-card-title, .contact-card-text{
+  color: white;
+}
+
+.general-service-img{
+  padding-left: 5%;
+}
+.quality-assurance-img{
+  padding-left: 5%;
+}
+
+.hse-element-title{
+  background-color: #5DA312;
+  color: black;
+}
+
+.hse-management-title{
+  background-color: black;
+  color: white;
+}
+
+/* Style for the back to top button */
+.back-to-top-button {
+  display: none;
+  position: fixed;
+  bottom: 4%;
+  right: 3%;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 100%;
+  cursor: pointer;
+  padding: 2px 11px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top-button{
+  background-color: #5DA312;
+}
+
+.footer-links:hover {
+  text-decoration: underline;
+  color: red;
+  opacity: 1;
+}
+
+.footer-links:active {
+  text-decoration: underline;
+  color: red;
+  opacity: 1;
+}
+
+.text-footer{
+  color: black;
+  opacity: 0.7;
+}
+
+.nav-a-background{
+  background: rgba(0, 0, 0, 0.5) url('./about.png');
+}
+.nav-s-background{
+  background: rgba(0, 0, 0, 0.5) url('./service1.jpg');
+}
+.nav-design{
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.nav-text{
+ padding-top: 13%;
+}
+.div-bar {
+  height: 15px;
+}
+
+.gold{
+  background-color: gold;
+}
+.green{
+  background-color: #5DA312;
+  color: white;
+}
+.red{
+  background-color: red;
+  color: white;
+}
+
+
+/* Initially hide the footer content */
+.hide-footer{
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.5s, transform 1.5s;
+}
+
+/* Add this class to slide in the footer content */
+.slide-in-footer{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Initially hide the footer content */
+.hide-foote-sider{
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 1.5s, transform 1.5s;
+}
+
+/* Add this class to slide in the footer content */
+.slide-in-footer-side{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
