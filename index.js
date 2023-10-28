@@ -148,6 +148,20 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// Use JavaScript to control the splash screen and main content
+document.addEventListener("DOMContentLoaded", function () {
+  // Simulate a 1-second delay (adjust the duration as needed)
+  setTimeout(function () {
+      // Hide the splash screen and show the main content
+      document.getElementById("splash-logo").style.opacity = 0;
+      setTimeout(function () {
+          document.getElementById("splash-logo").style.display = "none";
+          document.getElementById("main-content").style.display = "block";
+      }, 1000); // Adjust the delay based on your animation duration
+  }, 1000); // Adjust the delay based on your splash screen duration
+});
+
+
 
 
 
