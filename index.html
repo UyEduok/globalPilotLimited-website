@@ -15,7 +15,12 @@
 </head>
 <body>
 
-      <section id="nav">
+  <div id="splash-logo" class="splash">
+    <img src="./splashicon.png" alt="Splash Logo">
+  </div>  
+
+  <div id="main-content" class="main-content">
+      <section id="nav"> 
         <nav class="navbar nav-size navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container small-nav">
                 <a class="navbar-brand logo" href="./index.html"><img src="./logo.png"  alt="GPL Logo"></a>
@@ -291,14 +296,14 @@
       </div>
     </section>
 
-    <section id="footer-section">
+    <section id="footer-section" class="footer-sect">
       <button onclick="scrollToTop()" class="back-to-top-button" id="backToTopButton">↑</button>
     <footer class="pb-2 pt-4">
       <div class="container pb-2 pt-3 px-4 px-md-3">
         <div class="row footer-row">
           <div class="col-lg-5 col-11 foot-logo-div">
-            <a href="./index.html"><img src="./logo.png" alt="GPL Logo" height="40"></a>
-            <ul class="list-unstyled foot-items contact-footer">
+            <a href="./index.html"><img src="./logo.png" alt="GPL Logo" height="40" class="footer-logo hide-footer"></a>
+            <ul class="list-unstyled foot-items contact-footer footer-f hide-footer">
               <li class="mb-2 text-footer small text-sm">
                 <i class="bi bi-telephone-inbound pe-3">
                   <a href="tel:+2347084830368"><img src="./telephone-inbound.svg" alt="icon"></a>
@@ -318,17 +323,17 @@
                 info@globalpilotgroup.com
               </li>
             </ul>
-            
+
           </div>
-          <div class="col-11 col-lg-3 footer2">
+          <div class="col-11 col-lg-3 footer2 footer-s hide-footer">
             <a href="./Contact.html" class="text-decoration-none text-footer footer-links mb-2 small text-sm">Careers</a>
             <br><a href="./Career.html" class="text-decoration-none mb-2 text-footer small text-sm footer-links">About Us</a>
           </div>
-          <div class="col-11 col-lg-4 footer3">
+          <div class="col-11 col-lg-4 footer3 footer-t hide-footer">
             <a href="./About.html" class="text-decoration-none footer-links mb-2 text-footer small text-sm">Contact Us</a>
             <br><a href="./Vision-Mission-Values.html" class="text-decoration-none footer-links mb-2 text-footer small text-smn">Our Mission, Vission &amp; Values</a>
           </div>
-          <div class="copyright col-11 col-lg-12 text-center mb-2 text-muted small text-sm">
+          <div class="copyright col-11 col-lg-12 text-center mb-2 text-muted small text-sm footer-fo hide-footer">
             &copy; 2023 Global Pilot Limited - All rights reserved.
           </div>
         </div>
@@ -336,7 +341,10 @@
     </footer>
     </section>
 
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
 </body>
 </html>
