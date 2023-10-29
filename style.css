@@ -25,7 +25,7 @@ body {
 .t-nav-link {
   color: gold;
   font-weight: bold;
-  padding: 12px 16px; 
+  padding: 12px 16px;
 }
 
 .navbar-nav .nav-link:hover,
@@ -34,7 +34,6 @@ body {
 }
 
 
-/* CSS for the scrolled-down state */
 .scrolled-navbar {
   background-color: white !important;
   padding-top: 1% !important;
@@ -47,7 +46,7 @@ body {
   font-weight: normal !important;
 }
 
-/* Style for the ellipsis button */
+
 .ellipsis-button {
   background: none;
   border: none;
@@ -57,7 +56,7 @@ body {
   font-weight: bold;
 }
 
-/* Style for the dropdown content (hidden by default) */
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -68,7 +67,7 @@ body {
   padding: 0;
 }
 
-/* Style for the dropdown links */
+
 .dropdown-item {
   padding: 12px 16px;
   text-decoration: none;
@@ -88,19 +87,16 @@ body {
 }
 
 
-/* Show the dropdown content when the ellipsis button is hovered over */
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-
-/* Custom icon for the dropdown trigger element */
 .dropdown-trigger::before {
-  content: "\25BC"; /* You can use different Unicode characters for the dropdown icon */
-  margin-left: 5px; /* Adjust the spacing between the icon and text */
+  content: "\25BC"; 
+  margin-left: 5px; 
 }
 
-/* Custom styling for the dropdown menu */
 .dropdown-on-hover-menu {
   display: none;
   position: absolute;
@@ -109,12 +105,10 @@ body {
   padding: 10px;
 }
 
-/* Apply styles when the dropdown menu is visible */
 .dropdown-on-hover-menu.show {
   display: block;
 }
 
-/* Show the dropdown menu when the parent element is hovered over */
 .nav-item:hover .dropdown-menu {
   display: block;
   padding: 0;
@@ -145,7 +139,7 @@ body {
 }
 
 .carousel-indicators {
-  display: none; /* Hide the carousel indicators */
+  display: none;
 }
 
 .carousel-pic{
@@ -157,7 +151,6 @@ body {
   bottom: 30%;
 }
 
-/* Define the slide-in animation class */
 .carousel-slide-in-top {
   animation: slide-in-top 1.5s ease-in-out;
 }
@@ -242,10 +235,22 @@ h2.text-body-emphasis{
   font-weight: normal !important;
 }
 
+.proceess-btn{
+  display: none;
+ }
+
+ .shadow-lg:hover{
+  transform: scale(1.5);
+  transition: transform 0.3s;
+ }
+ .servies-card-img:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s;
+ }
 
 @media (max-width: 992px) {
 
-  body {
+  .main-content{
     overflow-x: hidden;
   }
   .carousel-control-next {
@@ -277,7 +282,7 @@ h2.text-body-emphasis{
   .nav-link{
     background-color: #5DA312;
     margin: 0.5px;
-    width: 100%; /* Make the navbar items occupy the full width */
+    width: 100%;
     display: block;
     color: white;
   }
@@ -301,9 +306,9 @@ h2.text-body-emphasis{
 
   .gpl-people-image{
     padding-bottom: 90px;
-    width: 500px; /* Make the image the same width as the container */
+    width: 500px; 
     padding-right: 15px;
-    display: block; /* Center the image horizontally */
+    display: block; 
     margin: 0 auto;
   }
 
@@ -333,13 +338,13 @@ h2.text-body-emphasis{
   .footer-row {
     text-align: center;
   }
-  .footer2, .footer3 {
-    text-align: center;
-    padding-top: 2%;
+  .footer2{
+    padding-top: 20px;
   }
 
   .footer3{
     padding-bottom: 2%;
+    padding-top: 10px;
   }
 
   .logo{
@@ -363,6 +368,14 @@ h2.text-body-emphasis{
     position: relative;
     top: 20%;
   }
+
+  .quality-container{
+    display: none;
+  }
+
+  .proceess-btn{
+    display: block;
+   }
 
 }
 
@@ -397,13 +410,12 @@ h2.text-body-emphasis{
      width:50% !important;
 }  
 
-/* Add CSS to transition the main content */
 .offcanvas-slide {
   transition: transform 0.3s ease-in-out;
 }
 
 .offcanvas-end.active {
-  transform: translateX(-100%); /* Push the main content to the left */
+  transform: translateX(-100%); 
 }
 
 .close-offcanvas{
@@ -428,6 +440,7 @@ h2.text-body-emphasis{
 
 .contact-footer{
   padding-top: 3%;
+  padding-left: 10px;
 }
 
 .copyright{
@@ -460,7 +473,6 @@ h2.text-body-emphasis{
   color: white;
 }
 
-/* Style for the back to top button */
 .back-to-top-button {
   display: none;
   position: fixed;
@@ -533,33 +545,38 @@ h2.text-body-emphasis{
 }
 
 
-/* Initially hide the footer content */
 .hide-footer{
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 1.5s, transform 1.5s;
 }
 
-/* Add this class to slide in the footer content */
 .slide-in-footer{
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Initially hide the footer content */
 .hide-footer-side{
   opacity: 0;
   transform: translateX(40px);
   transition: opacity 1.5s, transform 1.5s;
 }
 
-/* Add this class to slide in the footer content */
 .slide-in-footer-side{
   opacity: 1;
   transform: translateX(0);
 }
 
+.hide-footer-side-left{
+  opacity: 0;
+  transform: translateX(-40px); 
+  transition: opacity 1.5s, transform 1.5s;
+}
 
+.slide-in-footer-side-left{
+  opacity: 1;
+  transform: translateX(0);
+}
 
 .splash {
   position: fixed;
@@ -570,12 +587,21 @@ h2.text-body-emphasis{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff; /* Customize the background color */
-  z-index: 9999; /* Ensure the splash is on top of everything */
-  transition: opacity 1s; /* Add a smooth transition effect */
-  opacity: 1; /* Initially visible */
+  background-color: #ffffff;
+  z-index: 9999; 
+  transition: opacity 1s; 
+  opacity: 1; 
 }
 
 .main-content {
-  display: none; /* Initially hide the main content */
+  display: none; 
+}
+
+.full-screen-offcanvas {
+  width: 100% !important;
+  height: 100% !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  transform: translateX(0);
 }
